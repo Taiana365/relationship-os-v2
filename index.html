@@ -190,11 +190,52 @@ footer{
     position:relative;
     z-index:1;
 }
+<body>
+
+<div id="login-screen">
+
+<h1>🔒 Relationship OS</h1>
+
+<p>Digite a data de inicialização do sistema</p>
+
+<input type="password" id="senha" placeholder="DDMMAAAA">
+
+<br><br>
+
+<button onclick="verificarSenha()">Entrar</button>
+
+<p id="erro"></p>
+
+</div>
+
+<div id="site">
+
+<div class="hearts">
 </style>
 
 </head>
 
 <body>
+    
+<div id="login-screen">
+
+<h1>🔒 Relationship OS</h1>
+
+<p>Digite a data de inicialização do sistema</p>
+
+<input type="password" id="senha" placeholder="DDMMAAAA">
+
+<br><br>
+
+<button onclick="verificarSenha()">Entrar</button>
+
+<p id="erro"></p>
+
+</div>
+
+<div id="site">
+
+<div class="hearts">
     
 <div class="hearts">
     <span>❤️</span>
@@ -356,6 +397,35 @@ Relationship OS v2.0 iniciado.
 <footer>
 Relationship OS ❤️
 </footer>
+<footer>
+Relationship OS ❤️
+</footer>
 
+</div>
+
+<script>
+
+function verificarSenha(){
+
+    const senha = document.getElementById("senha").value;
+
+    if(senha === "12062025"){
+
+        document.getElementById("login-screen").style.display = "none";
+        document.getElementById("site").style.display = "block";
+
+    }else{
+
+        document.getElementById("erro").innerHTML =
+        "❌ Senha incorreta";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
 </body>
 </html>
