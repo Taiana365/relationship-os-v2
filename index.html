@@ -499,46 +499,12 @@ function verificarSenha(){
     const senha = document.getElementById("senha").value;
 
     if(senha === "12062025"){
+
         document.getElementById("musica").play();
 
         document.getElementById("login-screen").style.display = "none";
 
-        document.getElementById("loading-screen").style.display = "flex";
-
-        const progresso =
-            document.getElementById("progresso");
-
-        const mensagem =
-            document.getElementById("mensagem");
-
-        setTimeout(()=>{
-            progresso.style.width="25%";
-            mensagem.innerHTML=
-            "📸 Recuperando memórias...";
-        },500);
-
-        setTimeout(()=>{
-            progresso.style.width="50%";
-            mensagem.innerHTML=
-            "💾 Restaurando backup emocional...";
-        },1500);
-
-        setTimeout(()=>{
-            progresso.style.width="75%";
-            mensagem.innerHTML=
-            "✈️ Preparando viagem internacional...";
-        },2500);
-
-        setTimeout(()=>{
-            progresso.style.width="100%";
-            mensagem.innerHTML=
-            "❤️ Sincronizando Renato & Taiana...";
-        },3500);
-
-        setTimeout(()=>{
-            document.getElementById("loading-screen").style.display="none";
-            document.getElementById("site").style.display="block";
-        },5000);
+        document.getElementById("site").style.display = "block";
 
     }else{
 
